@@ -1,3 +1,3 @@
 
-rootProject.name = "SpdxToOrt"
+rootProject.name = "DoConvert"
 
