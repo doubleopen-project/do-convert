@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21310574-1641-4ed3-9260-a757ff951092" name="Changes" comment="feat: add conversion from spdx to ort">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    <list default="true" id="21310574-1641-4ed3-9260-a757ff951092" name="Changes" comment="build: add Dockerfile">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +167,13 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1651560760143</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="build: add Dockerfile">
+      <created>1651562316161</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1651562316161</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,6 +190,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="feat: add conversion from spdx to ort" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add conversion from spdx to ort" />
+    <MESSAGE value="build: add Dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="build: add Dockerfile" />
   </component>
 </project>
