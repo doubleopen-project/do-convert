@@ -84,7 +84,7 @@ internal class DoConvert : CliktCommand(
 /**
  * Convert SPDX Document from Yocto created by meta-doubleopen layer to an ORT Result file.
  */
-private fun spdxToOrt(spdxDocument: SpdxDocument, skipScanResultsConversion: Boolean): OrtResult {
+fun spdxToOrt(spdxDocument: SpdxDocument, skipScanResultsConversion: Boolean): OrtResult {
     /* Store image from the SPDX as a project in the ORT Result. SPDX's documentDescribes should always include the root
      * package, so not-null assertion should be alright.
      */

@@ -20,12 +20,17 @@ application {
 
 dependencies {
     testImplementation(kotlin("test"))
+    testImplementation("io.kotest:kotest-runner-junit5:5.3.0")
     implementation("com.github.oss-review-toolkit.ort:spdx-utils:11728a9b80")
     implementation("com.github.oss-review-toolkit.ort:model:11728a9b80")
     implementation("com.github.ajalt.clikt:clikt:3.4.2")
 }
 
 tasks.test {
+    useJUnitPlatform()
+}
+
+tasks.withType<Test>().configureEach {
     useJUnitPlatform()
 }
 

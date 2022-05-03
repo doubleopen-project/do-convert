@@ -106,3 +106,6 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+# Unpacked test file, too big to store in Git.
+src/test/resources/core-image-minimal.spdx.json
