@@ -1,0 +1,283 @@
+{
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-Image-SPDX",
+  "name": "image",
+  "documentNamespace": "http://spdx.org/spdxdocs/image",
+  "creationInfo": {
+    "licenseListVersion": "3.11",
+    "creators": [
+      "Tool: meta-doubleopen",
+      "Organization: Double Open Project ()",
+      "Person: N/A ()"
+    ],
+    "created": "2022-04-12T10:25:18Z",
+    "comment": "This document was created by analyzing the source of the Yocto recipe during the build."
+  },
+  "documentDescribes": [
+    "SPDXRef-Image-image"
+  ],
+  "packages": [
+    {
+      "name": "image",
+      "SPDXID": "SPDXRef-Image-image",
+      "versionInfo": "1.0",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "package1",
+      "SPDXID": "SPDXRef-Recipe-package1",
+      "versionInfo": "1.0",
+      "downloadLocation": "file://functions",
+      "homepage": "https://github.com/project/package1",
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "licenseDeclared": "GPL-2.0-only",
+      "copyrightText": "NOASSERTION",
+      "summary": "A summary of recipe1",
+      "description": "A longer description of recipe1.",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "http://spdx.org/rdf/references/cpe23Type",
+          "referenceLocator": "cpe:2.3:a:*:recipe1:1.0:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "name": "package1-doc",
+      "SPDXID": "SPDXRef-Package-package1-doc",
+      "versionInfo": "1.0",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "licenseDeclared": "GPL-2.0-only",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "package1-lib",
+      "SPDXID": "SPDXRef-Package-package1-lib",
+      "versionInfo": "1.0",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "licenseDeclared": "GPL-2.0-only",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "package2",
+      "SPDXID": "SPDXRef-Recipe-package2",
+      "versionInfo": "1.0",
+      "downloadLocation": "file://functions",
+      "homepage": "https://github.com/project/package2",
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "summary": "A summary of recipe2",
+      "description": "A longer description of recipe2.",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "http://spdx.org/rdf/references/cpe23Type",
+          "referenceLocator": "cpe:2.3:a:*:recipe2:1.0:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "name": "package2-lib",
+      "SPDXID": "SPDXRef-Package-package2-lib",
+      "versionInfo": "1.0",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    }
+  ],
+  "hasExtractedLicensingInfos": [],
+  "files": [
+    {
+      "fileName": "sourcefile.rs",
+      "SPDXID": "SPDXRef-SourceFile-package1-1",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ab15fd526bd8dd18a9e77ebc139656bf4d33e97fc7238cd11bf60e2b9b8666c6"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "06877624ea5c77efe3b7e39b0f909eda6e25a4ec"
+        },
+        {
+          "algorithm": "MD5",
+          "checksumValue": "751419260aa954499f7abaabaa882bbe"
+        }
+      ],
+      "licenseConcluded": "GPL-2.0 AND GPL-2.0-or-later",
+      "licenseInfoInFiles": [
+        "GPL-2.0"
+      ],
+      "copyrightText": "Copyright Author (c) 2022"
+    },
+    {
+      "fileName": "sourcefile2.rs",
+      "SPDXID": "SPDXRef-SourceFile-package1-2",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ab85fd526bd8dd18a9e77ebc139656bf4d33e97fc7238cd11bf60e2b9b8666c6"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "06377624ea5c77efe3b7e39b0f909eda6e25a4ec"
+        },
+        {
+          "algorithm": "MD5",
+          "checksumValue": "752419260aa954499f7abaabaa882bbe"
+        }
+      ],
+      "licenseConcluded": "AGPL-3.0",
+      "licenseInfoInFiles": [
+        "ISC"
+      ],
+      "copyrightText": "Copyright Author (c) 2022"
+    },
+    {
+      "fileName": "sourcefile3.rs",
+      "SPDXID": "SPDXRef-SourceFile-package1-3",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ab85fd526bd8dd18a9977ebc139656bf4d33e97fc7238cd11bf60e2b9b8666c6"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "09377624ea5c77efe3b7e39b0f909eda6e25a4ec"
+        },
+        {
+          "algorithm": "MD5",
+          "checksumValue": "752919260aa954499f7abaabaa882bbe"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright Author (c) 2022"
+    },
+    {
+      "fileName": "package2-lib",
+      "SPDXID": "SPDXRef-PackagedFile-package2-1",
+      "fileTypes": [
+        "BINARY"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ab15fd536bd8dd18a9e77ebc136656bf4d33e97fc7238cd11bf60e2b9b8666c6"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "06877624ea5c77efe3b7e39b0f609eda6e25a4ec"
+        }
+      ],
+      "licenseConcluded": "LGPL-2.0",
+      "licenseInfoInFiles": [
+        "LGPL-2.0"
+      ],
+      "copyrightText": "Copyright Author (c) 2022"
+    },
+    {
+      "fileName": "package1-lib",
+      "SPDXID": "SPDXRef-PackagedFile-package1-1",
+      "fileTypes": [
+        "BINARY"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "190aa44ac485fe25561a9ddf9ffe77ee1845b890e770763faaee1f2d3f897f96"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "edcaaceb4256df5b24961710189a29a8adcaefa2"
+        }
+      ],
+      "licenseConcluded": "GPL-2.0 AND GPL-2.0-or-later",
+      "licenseInfoInFiles": [
+        "GPL-2.0"
+      ],
+      "copyrightText": "Copyright Author (c) 2022"
+    }
+  ],
+  "snippets": [],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Recipe-package1",
+      "relatedSpdxElement": "SPDXRef-SourceFile-package1-1",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-package1-lib",
+      "relatedSpdxElement": "SPDXRef-Image-image",
+      "relationshipType": "PACKAGE_OF"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-package1-lib",
+      "relatedSpdxElement": "SPDXRef-PackagedFile-package1-1",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-package1-lib",
+      "relatedSpdxElement": "SPDXRef-SourceFile-package1-3",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-PackagedFile-package1-lib-1",
+      "relatedSpdxElement": "SPDXRef-SourceFile-package1-1",
+      "relationshipType": "GENERATED_FROM"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-package2-lib",
+      "relatedSpdxElement": "SPDXRef-Image-image",
+      "relationshipType": "PACKAGE_OF"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-package2-lib",
+      "relatedSpdxElement": "SPDXRef-PackagedFile-package2-1",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-PackagedFile-package2-1",
+      "relatedSpdxElement": "SPDXRef-SourceFile-package1-2",
+      "relationshipType": "GENERATED_FROM"
+    }
+  ],
+  "annotations": []
+}
