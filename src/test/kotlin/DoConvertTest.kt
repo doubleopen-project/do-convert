@@ -8,6 +8,8 @@ import org.ossreviewtoolkit.model.utils.createLicenseInfoResolver
 import org.ossreviewtoolkit.utils.spdx.SpdxExpression
 import org.ossreviewtoolkit.utils.spdx.SpdxModelMapper
 import org.ossreviewtoolkit.utils.spdx.model.SpdxDocument
+import org.ossreviewtoolkit.utils.test.patchActualResult
+import org.ossreviewtoolkit.utils.test.readOrtResult
 import java.io.File
 
 
@@ -43,6 +45,14 @@ class DoConvertTest : WordSpec({
             val ortResult = spdxToOrt(spdx, false)
 
             ortResult.analyzer!!.result.packages.size shouldBe 2
+        }
+
+        "should match the saved result file" {
+            val spdxFile = File("src/test/resources/test-data.spdx.json").absoluteFile
+            val spdx = SpdxModelMapper.read<SpdxDocument>(spdxFile)
+            val spdxOrtResult = spdxToOrt(spdx, false)
+            val expectedOrtResult = readOrtResult("src/test/resources/test-data.ort.yml")
+            patchActualResult(spdxOrtResult) shouldBe patchActualResult(expectedOrtResult)
         }
     }
 

@@ -1,0 +1,215 @@
+---
+repository:
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  config: { }
+analyzer:
+  start_time: "1970-01-01T00:00:00Z"
+  end_time: "1970-01-01T00:00:00Z"
+  environment:
+    ort_version: "11728a9b80"
+    java_version: "11.0.10"
+    os: "Windows 10"
+    processors: 8
+    max_memory: 4213178368
+    variables:
+      OS: "Windows_NT"
+      COMSPEC: "C:\\windows\\system32\\cmd.exe"
+      JAVA_HOME: "C:\\Program Files\\AdoptOpenJDK\\jdk-11.0.10.9-hotspot\\"
+    tool_versions: { }
+  config:
+    allow_dynamic_versions: false
+  result:
+    projects:
+      - id: "Yocto::image:1.0"
+        definition_file_path: ""
+        declared_licenses: [ ]
+        declared_licenses_processed: { }
+        vcs:
+          type: ""
+          url: ""
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: ""
+          url: ""
+          revision: ""
+          path: ""
+        homepage_url: ""
+        scopes:
+          - name: "distributed"
+            dependencies:
+              - id: "Yocto::package1-lib:1.0"
+              - id: "Yocto::package2-lib:1.0"
+          - name: "notDistributed"
+            dependencies: [ ]
+          - name: "recipes"
+            dependencies: [ ]
+    packages:
+      - package:
+          id: "Yocto::package1-lib:1.0"
+          purl: "pkg:yocto/package1-lib@1.0"
+          declared_licenses:
+            - "GPL-2.0-only"
+          declared_licenses_processed:
+            spdx_expression: "GPL-2.0-only"
+          description: ""
+          homepage_url: ""
+          binary_artifact:
+            url: ""
+            hash:
+              value: ""
+              algorithm: ""
+          source_artifact:
+            url: ""
+            hash:
+              value: ""
+              algorithm: ""
+          vcs:
+            type: ""
+            url: ""
+            revision: ""
+            path: ""
+          vcs_processed:
+            type: ""
+            url: ""
+            revision: ""
+            path: ""
+        curations: [ ]
+      - package:
+          id: "Yocto::package2-lib:1.0"
+          purl: "pkg:yocto/package2-lib@1.0"
+          declared_licenses:
+            - "MIT"
+          declared_licenses_processed:
+            spdx_expression: "MIT"
+          description: ""
+          homepage_url: ""
+          binary_artifact:
+            url: ""
+            hash:
+              value: ""
+              algorithm: ""
+          source_artifact:
+            url: ""
+            hash:
+              value: ""
+              algorithm: ""
+          vcs:
+            type: ""
+            url: ""
+            revision: ""
+            path: ""
+          vcs_processed:
+            type: ""
+            url: ""
+            revision: ""
+            path: ""
+        curations: [ ]
+    has_issues: false
+scanner:
+  start_time: "1970-01-01T00:00:00Z"
+  end_time: "1970-01-01T00:00:00Z"
+  environment:
+    ort_version: "11728a9b80"
+    java_version: "11.0.10"
+    os: "Windows 10"
+    processors: 8
+    max_memory: 4213178368
+    variables:
+      OS: "Windows_NT"
+      COMSPEC: "C:\\windows\\system32\\cmd.exe"
+      JAVA_HOME: "C:\\Program Files\\AdoptOpenJDK\\jdk-11.0.10.9-hotspot\\"
+    tool_versions: { }
+  config:
+    skip_concluded: false
+    create_missing_archives: false
+    ignore_patterns:
+      - "**/*.ort.yml"
+      - "**/*.spdx.yml"
+      - "**/*.spdx.yaml"
+      - "**/*.spdx.json"
+      - "**/META-INF/DEPENDENCIES"
+      - "**/META-INF/DEPENDENCIES.txt"
+      - "**/META-INF/NOTICE"
+      - "**/META-INF/NOTICE.txt"
+  results:
+    scan_results:
+      Yocto::package1-lib:1.0:
+        - provenance: { }
+          scanner:
+            name: ""
+            version: ""
+            configuration: ""
+          summary:
+            start_time: "1970-01-01T00:00:00Z"
+            end_time: "1970-01-01T00:00:00Z"
+            package_verification_code: ""
+            licenses:
+              - license: "Apache-2.0"
+                location:
+                  path: "SPDXRef-SourceFile-package1-3"
+                  start_line: 200000
+                  end_line: 200000
+              - license: "GPL-2.0 AND GPL-2.0-or-later"
+                location:
+                  path: "SPDXRef-PackagedFile-package1-1"
+                  start_line: 200000
+                  end_line: 200000
+            copyrights:
+              - statement: "Copyright Author (c) 2022"
+                location:
+                  path: "SPDXRef-PackagedFile-package1-1"
+                  start_line: -1
+                  end_line: -1
+              - statement: "Copyright Author (c) 2022"
+                location:
+                  path: "SPDXRef-SourceFile-package1-3"
+                  start_line: -1
+                  end_line: -1
+      Yocto::package2-lib:1.0:
+        - provenance: { }
+          scanner:
+            name: ""
+            version: ""
+            configuration: ""
+          summary:
+            start_time: "1970-01-01T00:00:00Z"
+            end_time: "1970-01-01T00:00:00Z"
+            package_verification_code: ""
+            licenses:
+              - license: "AGPL-3.0"
+                location:
+                  path: "SPDXRef-SourceFile-package1-2"
+                  start_line: 200000
+                  end_line: 200000
+              - license: "LGPL-2.0"
+                location:
+                  path: "SPDXRef-PackagedFile-package2-1"
+                  start_line: 200000
+                  end_line: 200000
+            copyrights:
+              - statement: "Copyright Author (c) 2022"
+                location:
+                  path: "SPDXRef-PackagedFile-package2-1"
+                  start_line: -1
+                  end_line: -1
+              - statement: "Copyright Author (c) 2022"
+                location:
+                  path: "SPDXRef-SourceFile-package1-2"
+                  start_line: -1
+                  end_line: -1
+    storage_stats:
+      num_reads: 0
+      num_hits: 0
+    has_issues: false
+advisor: null
+evaluator: null

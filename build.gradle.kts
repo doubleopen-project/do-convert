@@ -21,6 +21,8 @@ application {
 dependencies {
     testImplementation(kotlin("test"))
     testImplementation("io.kotest:kotest-runner-junit5:5.3.0")
+    testImplementation("com.github.oss-review-toolkit.ort:test-utils:11728a9b80")
+    testImplementation("org.apache.logging.log4j:log4j-core:2.17.2")
     implementation("com.github.oss-review-toolkit.ort:spdx-utils:11728a9b80")
     implementation("com.github.oss-review-toolkit.ort:model:11728a9b80")
     implementation("com.github.ajalt.clikt:clikt:3.4.2")
